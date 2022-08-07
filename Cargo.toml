@@ -1,0 +1,19 @@
+[package]
+name = "clocks"
+version = "0.0.1"
+authors = ["Edmund Smith <ed.smith@collabora.com>"]
+edition = "2021"
+license = "MIT OR Apache-2.0"
+description = "A testable source of time"
+repository = "https://github.com/eds-collabora/clocks"
+keywords = [ "mock", "testing", "time" ]
+categories = [ "development-tools" ]
+readme = "README.md"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+chrono = { version = "0.4" }
+either = "1.8"
+tokio = { version = "1.20", features = ["macros", "rt", "sync", "time"] }
+priq = "0.1.6"
